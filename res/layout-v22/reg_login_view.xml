@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAutofill="0x00000008"
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wemusic="http://schemas.android.com/apk/res-auto">
     <com.tencent.wemusic.welcom.WelcomePageFlipper android:id="@id/welcom_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/welcom_flipper_margin_left" android:layout_marginRight="@dimen/welcom_flipper_margin_right" />
     <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/welcom_mask_top" android:scaleType="centerCrop" android:layout_alignParentTop="true" />

@@ -50,7 +50,7 @@
 
     const/4 v1, 0x2
 
-    const-string v2, "isVip"
+    const-string v2, "isFree"
 
     aput-object v2, v0, v1
 

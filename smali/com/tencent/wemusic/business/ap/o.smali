@@ -151,11 +151,11 @@
 
     aput-object v3, v1, v2
 
-    const-string v2, "root.body.isvip"
+    const-string v2, "root.body.servertime"
 
     aput-object v2, v1, v4
 
-    const-string v2, "root.body.expiretime"
+    const-string v2, "root.body.servertime"
 
     aput-object v2, v1, v5
 
@@ -167,13 +167,13 @@
 
     aput-object v2, v1, v7
 
-    const-string v2, "root.body.isdts"
+    const-string v2, "root.body.servertime"
 
     aput-object v2, v1, v8
 
     const/4 v2, 0x6
 
-    const-string v3, "root.body.dts_expiretime"
+    const-string v3, "root.body.servertime"
 
     aput-object v3, v1, v2
 
@@ -185,7 +185,7 @@
 
     const/16 v2, 0x8
 
-    const-string v3, "root.body.isvvip"
+    const-string v3, "root.body.servertime"
 
     aput-object v3, v1, v2
 
@@ -221,19 +221,19 @@
 
     const/16 v2, 0xe
 
-    const-string v3, "root.body.iskvip"
+    const-string v3, "root.body.servertime"
 
     aput-object v3, v1, v2
 
     const/16 v2, 0xf
 
-    const-string v3, "root.body.kvip_expiretime"
+    const-string v3, "root.body.servertime"
 
     aput-object v3, v1, v2
 
     const/16 v2, 0x10
 
-    const-string v3, "root.body.isAutoRenewVIP"
+    const-string v3, "root.body.servertime"
 
     aput-object v3, v1, v2
 
