@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAutofill="0x00000008"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wemusic="http://schemas.android.com/apk/res-auto">
+    <com.tencent.wemusic.welcom.WelcomePageFlipper android:id="@id/welcom_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/welcom_flipper_margin_left" android:layout_marginRight="@dimen/welcom_flipper_margin_right" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/welcom_mask_top" android:scaleType="centerCrop" android:layout_alignParentTop="true" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/welcom_mask_bottom" android:scaleType="centerCrop" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/welcom_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/welcome_logo_1280" android:layout_alignParentTop="true" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/black_10" />
+    <RelativeLayout android:id="@id/reg_and_login_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/reg_top_bar" android:background="@color/black_10" android:layout_width="fill_parent" android:layout_height="@dimen/reg_top_bar_height" android:layout_alignParentTop="true">
+            <com.tencent.wemusic.ui.widget.JXButton android:id="@id/reg_top_bar_back_btn" android:background="@drawable/icon_topbar_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/reg_back_btn_margin_left" android:layout_centerVertical="true" />
+            <com.tencent.wemusic.ui.common.SwitchBar android:id="@id/reg_top_bar_switch_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" wemusic:left_text="@string/reg_switch_left_text" wemusic:right_text="@string/reg_switch_right_text" />
+        </RelativeLayout>
+        <View android:id="@id/reg_top_bar_line" android:background="#4d000000" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/reg_top_bar" />
+        <RelativeLayout android:id="@id/reg_tips_layout" android:layout_width="@dimen/reg_width" android:layout_height="@dimen/reg_tips_height" android:layout_below="@id/reg_top_bar_line" android:layout_centerHorizontal="true">
+            <com.tencent.wemusic.ui.widget.JXTextView android:id="@id/reg_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/reg_tips_margin_btm" android:text="@string/reg_tips_login" android:layout_alignParentBottom="true" style="@style/reg_tips_style" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/reg_login_layout" android:background="@drawable/input_bg" android:paddingLeft="@dimen/reg_input_padding" android:paddingRight="@dimen/reg_input_padding" android:layout_width="@dimen/reg_width" android:layout_height="wrap_content" android:layout_below="@id/reg_tips_layout" android:layout_centerHorizontal="true">
+            <com.tencent.wemusic.ui.common.ClearEditText android:id="@id/reg_login_addr" android:hint="@string/reg_hint_email" android:inputType="textEmailAddress" style="@style/hardcode_input_style" />
+            <View style="@style/input_line_style" />
+            <com.tencent.wemusic.ui.common.PasswordInput android:id="@id/reg_login_pwd" android:layout_width="fill_parent" android:layout_height="@dimen/reg_input_height" />
+            <View android:id="@id/reg_login_nick_name_line" android:visibility="gone" style="@style/input_line_style" />
+            <com.tencent.wemusic.ui.common.ClearEditText android:id="@id/reg_login_nick_name" android:visibility="gone" android:hint="@string/reg_hint_nick_name" style="@style/hardcode_input_style" />
+        </LinearLayout>
+        <include android:id="@id/reg_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reg_login_btn_margin_top" android:layout_below="@id/reg_login_layout" android:layout_centerHorizontal="true" layout="@layout/reg_login_btn" />
+        <com.tencent.wemusic.ui.widget.JXTextView android:id="@id/reg_login_err_text" android:visibility="gone" android:layout_marginTop="@dimen/reg_login_btm_text_layout_margin_top" android:layout_below="@id/reg_login" android:layout_alignLeft="@id/reg_login" style="@style/input_error_style" />
+        <RelativeLayout android:id="@id/reg_login_btm_text_layout" android:layout_width="@dimen/reg_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reg_login_btm_text_layout_margin_top" android:layout_below="@id/reg_login_err_text" android:layout_centerHorizontal="true">
+            <com.tencent.wemusic.ui.widget.JXTextView android:id="@id/reg_login_guest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reg_login_guest" android:drawableRight="@drawable/arrow_email" android:drawablePadding="@dimen/welcom_goto_margin_right" style="@style/reg_tips_style" />
+            <com.tencent.wemusic.ui.widget.JXTextView android:id="@id/reg_login_forge_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reg_login_forget_pwd" android:layout_alignParentRight="true" style="@style/reg_tips_style" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
